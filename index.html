@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <button class="open-btn">show popup</button>
+    </div>
+    <div class="cookies-box" id="img">
+        <span class="closs-btn">&times;</span>
+        <img src="./img/1.jfif" alt="erorr">
+        <h3>cookies and privacy</h3>
+        <p>The oldest classical Greek and Latin writing had little or no space</p>
+        <button>aafjsklaklds</button>
+        <br>
+        <a href="#" class="accept">acccookies</a>
+        <a href="#" class="setting">settings</a>
+        
+    </div>
+
+
+    <script>
+        document.querySelector('.open-btn').onclick = () =>{
+            document.querySelector('.cookies-box').classList.add('active');
+        }
+        document.querySelector('.closs-btn').onclick = () =>{
+            document.querySelector('.cookies-box').classList.remove('active');
+        }   
+    </script>
+</body>
+</html>
